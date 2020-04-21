@@ -1,0 +1,74 @@
+/********** Base styles **********/
+* {
+	box-sizing: border-box;
+}
+body{
+	margin: 10px;
+}
+h1 {
+	text-align: center;
+	font-family: 'Poiret One', cursive;
+	font-size: 175%
+}
+
+section {
+	font-family: 'Poiret One', cursive;
+	font-size: 125%;
+	border: 1px solid black;
+	width: 85px;
+	text-align: center;
+	float: right;
+}
+p {
+	font-family: 'Poiret One', cursive;
+	padding: 8px;
+	clear: right;
+	margin: 0
+}
+
+.bg {
+	background-color: #bfbfbf;
+	border: 1px solid black;
+	position: relative;
+	margin: 10px;
+}
+
+#chicken {
+	background-color: pink;
+}
+#beef {
+	background-color: #993333; /*red*/
+	color: white;
+}
+#sushi {
+	background-color: #ffff99; /*yellow*/
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg {
+    float: left;
+    width: 33.33%;
+  }
+ }
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2{
+    float: left;
+  }
+  .col-md-2{
+    width: 50%;
+  }
+  .col-md-1{
+  	width: 100%;
+  }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767) {
+	.col-sm {
+		float: left;
+		width: 100%;
+	}
+}
